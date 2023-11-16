@@ -1,6 +1,6 @@
 # MovieRecommendationSystem
 
-Discover your next favorite movie with our Movie Recommender! This project combines Python algorithms for personalized suggestions with a sleek web interface built using HTML, CSS, and JavaScript
+Python-based Movie Recommendation System with a user-friendly interface, enabling personalized movie suggestions. Developed algorithms to analyze user preferences.
 
 ## Screenshots
 
