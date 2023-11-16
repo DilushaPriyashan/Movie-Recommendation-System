@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendation System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <!-- box icons||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.css">
+  <script src="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.js"></script>
+
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="bgVideo1">
+      <source src="{{ url_for('static', filename='img/v1.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo2">
+      <source src="{{ url_for('static', filename='img/v2.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo3">
+      <source src="{{ url_for('static', filename='img/v3.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo4">
+      <source src="{{ url_for('static', filename='img/v4.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo5">
+      <source src="{{ url_for('static', filename='img/v5.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo6">
+      <source src="{{ url_for('static', filename='img/v6.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo7">
+      <source src="{{ url_for('static', filename='img/v7.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop id="bgVideo8">
+      <source src="{{ url_for('static', filename='img/v8.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div >
+    <h1 class="page-title">Movie Recommender</h1>
+  </div>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+</head>
+<body>
+
+  <div class="container-wrapper">
+    <div class="container1"> 
+      <div class="moviename-title">
+        <label for="movieInput"><h3>Enter Your Movie Name :</h3></label>
+      </div>
+      
+      <input class="input-tab" type="text" id="movieInput" placeholder="E.g. : Batman">
+      <button onclick="recommendMovie()">Get Recommendations</button>
+    </div>
+  
+    <div class="container2"> 
+      <div class="rec-title-container">
+        <h1>Recommended Movies <i class='bx bx-chevrons-down bx-flashing' style='font-size: 40px;'></i></h1>
+      </div> 
+
+      <div class="movie-box" style="display: none;">
+        <div  >
+          <div id="recommendations" ></div>
+        </div>
+      </div>
+
+      <div class="rec" >
+        <div class="intro-message" id="introMessage">
+          <i class='bx bx-chevrons-left bx-flashing' style='font-size: 46px;'></i>
+          Your perfect movie is waiting to be found. Explore, enjoy, and let the reel adventures begin!
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+</div>
+
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
