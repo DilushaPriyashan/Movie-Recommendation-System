@@ -1,6 +1,6 @@
 # MovieRecommendationSystem
 
-Python-based Movie Recommendation System with a user-friendly interface, enabling personalized movie suggestions. Developed algorithms to analyze user preferences.
+Machine learning Python-based Movie Recommendation System with a user-friendly interface, enabling personalized movie suggestions. Developed algorithms to analyze user preferences.
 
 ## Screenshots
 
