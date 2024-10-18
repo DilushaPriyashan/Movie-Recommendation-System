@@ -13,7 +13,7 @@ def index():
 
 @app.route('/recommend/<string:movie>', methods=['GET'])
 def recommend(movie):
-    index = new_df[new_df['title'] == movie].index[0]
+    index = new_df[new_df['title'].str.lower() == movie.lower()].index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
     recommendations = [new_df.iloc[i[0]]['title'] for i in distances[1:10]]
     return jsonify({'recommendations': recommendations})
